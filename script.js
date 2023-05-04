@@ -23,40 +23,44 @@ $(document).ready(function () {
         });
     }
 
-    $(".clients__slider .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        responsiveClass: true,
-        nav: true,
-        responsive: {
-            0: {
-                items: 3,
-                nav: false
-            },
-            480: {
-                nav: true
-            },
-            600: {
-                items: 5,
+    if (document.querySelector('.owl-carousel')) {
 
-            },
-            1000: {
-                items: 7,
-                nav: true,
+
+
+        $(".clients__slider .owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            responsiveClass: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 3,
+                    nav: false
+                },
+                480: {
+                    nav: true
+                },
+                600: {
+                    items: 5,
+
+                },
+                1000: {
+                    items: 7,
+                    nav: true,
+                }
             }
-        }
-    });
+        });
 
-    $(".main-slider.owl-carousel").owlCarousel({
-        loop: true,
-        // margin: 10,
-        dots: false,
-        responsiveClass: true,
-        nav: false,
-        items: 1,
-    });
-
+        $(".main-slider.owl-carousel").owlCarousel({
+            loop: true,
+            // margin: 10,
+            dots: false,
+            responsiveClass: true,
+            nav: false,
+            items: 1,
+        });
+    }
 
 });
 
@@ -87,7 +91,7 @@ function init() {
 
         // myMap.geoObjects.add(myPlacemark);
 
-        var myMap = new ymaps.Map('map', {
+        var myMap = new ymaps.Map('contacts__map', {
             center: [55.751574, 37.573856],
             zoom: 9
         }, {
