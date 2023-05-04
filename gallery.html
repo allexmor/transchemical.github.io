@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fancybox.css">
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9079e4be-c525-4511-b69d-d7ab066d5e0b&lang=ru_RU"
+        type="text/javascript">
+        </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__logo"></div>
+            <div class="header__text">Поставки химической
+                продукции</div>
+            <div class="header__info contacts contacts__info">
+                <div class="contacts-item contacts-item--time">
+                    <div class="contacts-title ">График работы</div>
+                    <div class="contacts-text">пн-пт 8:00-18.00</div>
+                </div>
+                <div class="contacts-item contacts-item--phone">
+                    <div class="contacts-title">Отдел продаж</div>
+                    <div class="contacts-text">+7 (495) 984-73-35</div>
+                </div>
+                <div class="contacts-item contacts-item--phone">
+                    <div class="contacts-title">Секретарь</div>
+                    <div class="contacts-text">+7 (496) 449-63-27</div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="catalog-menu">
+                <button class="button catalog-menu__button">Каталог продукции</button>
+                <div class="catalog-menu__list">
+                    <div class="catalog-menu__item"></div>
+                    <div class="catalog-menu__item"></div>
+                    <div class="catalog-menu__item"></div>
+                </div>
+            </div>
+            <div class="main-nav">
+                <div><a href="#">Главная</a></div>
+                <div><a href="#">О нас</a></div>
+                <div><a href="#">Фотогалерея</a></div>
+                <div><a href="#">Сертификаты и благодарности</a></div>
+                <div><a href="#">Контакты</a></div>
+            </div>
+            <div class="search">
+                <button class="search__button"></button>
+                <input type="text" name="search" class="search__input" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="galleries">
+            <div class="container">
+                <h1 class="visually-hidden">Галерея</h1>
+                <div class="gallery">
+                    <div class="gallery__title-bg1">
+                        <h2 class="gallery__title section__title ">
+                            АВТОПАРК
+                        </h2>
+                    </div>
+                    <div class="gallery__wrapper">
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                        <a href="images/XXL_height.webp" data-fancybox="gallery"><img
+                                src="images/XXL_height.webp" /></a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__title-bg2">
+                        <h2 class="gallery__title section__title">
+                            ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ
+                        </h2>
+                    </div>
+                    <div class="gallery__wrapper">
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                        <a href="images/XXL_height1.webp" data-fancybox="gallery2"><img
+                                src="images/XXL_height1.webp" /></a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery__title-bg3">
+                        <h2 class="gallery__title section__title">
+                            склад
+                        </h2>
+                    </div>
+                    <div class="gallery__wrapper">
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                        <a href="images/XXXL_3.webp" data-fancybox="gallery3"><img src="images/XXXL_3.webp" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="callback callbak--dark">
+            <div class="container">
+                <div class="callback__wrapper callback__right">
+                    <div class="callback__form">
+                        <div class="callback__top">
+                            <h2 class="section__title">У вас остались вопросы?</h2>
+                            <div class="form__agreement">
+                                Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и
+                                соглашаюсь c политикой конфиденциальности
+                            </div>
+                        </div>
+
+                        <form method="POST" class="form">
+                            <div class="form__top">
+                                <input type="text" name="phone" placeholder="Номер телефона">
+
+                                <button class="button">Перезвоните мне</button>
+
+                            </div>
+                            <div class="form__middle">
+                                <span class="form__radio-question">С каким отделом Вас соединить?</span>
+                                <div class="radio-wrapper">
+                                    <input type="radio" checked id="department3" name="department" value="retail"><label
+                                        for="department3">Розничным (до
+                                        1т) </label>
+                                </div>
+                                <div class="radio-wrapper">
+                                    <input type="radio" id="department4" name="department" value="retail">
+                                    <label for="department4">Оптовым (от
+                                        1т)
+                                    </label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="callback__image"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo"></div>
+                <div class="footer__desc">Поставки<br>
+                    химической<br>
+                    продукции</div>
+                <div class="footer__info contacts__info">
+                    <div class="contacts-item contacts-item--time">
+                        <div class="contacts-title">График работы</div>
+                        <div class="contacts-text">пн-пт 8:00-18.00</div>
+                    </div>
+                    <div class="contacts-item contacts-item--phone">
+                        <div class="contacts-title">Отдел продаж</div>
+                        <div class="contacts-text">+7 (495) 984-73-35</div>
+                    </div>
+                    <div class="contacts-item contacts-item--phone">
+                        <div class="contacts-title">Секретарь</div>
+                        <div class="contacts-text">+7 (496) 449-63-27</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__menu-wrapper">
+                    <div class="footer__title">
+                        СЫРЬЕВАЯ ХИМИЯ
+                    </div>
+                    <nav class="footer__menu">
+                        <ul>
+                            <li class="footer__menu-item">
+                                <a href="#">Натрий едкий раствор</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Натрий едкий в гранулах</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Соляная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Серная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Азотная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Ортофосфорная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Уксусная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Гипохлорит натрия</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Аммиачная вода</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Перекись водорода</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Антибактериальный гель</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Хлористый кальций</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Карбамид марки А</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu-wrapper">
+                    <div class="footer__title">
+                        ВОДОПОДГОТОВКА И ВОДООЧИСТКА
+                    </div>
+                    <nav class="footer__menu">
+                        <ul>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Флокулянты VETTAFLOC</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Железо хлорное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Сульфат алюминия</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Полиалюминия хлорид</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Сульфат железа</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__sections-wrapper">
+                    <div class="footer__sections">
+                        <ul>
+                            <li><a href="#">Пеногаситель ChemiFoam</a></li>
+                            <li><a href="#">Силикагель Bris</a></li>
+                            <li><a href="#">Кизельгур</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__sections">
+                        <ul>
+                            <li><a href="#">Пылеподавитель ChemiBind</a></li>
+                            <li><a href="#">Автокосметика ChemiCar</a></li>
+                            <li><a href="#">Химия для бассейнов ChemiPool</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>

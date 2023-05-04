@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="swiper-bundle.min.css">
     <script src="jquery-3.6.4.min.js"></script>
     <script src="swiper-bundle.min.js"></script>
+    <script src="dragScroll.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9079e4be-c525-4511-b69d-d7ab066d5e0b&lang=ru_RU"
+        type="text/javascript">
+        </script>
     <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -92,42 +97,48 @@
                 <div class="features__tables">
                     <div class="features__table features__table-100">
                         <h2 class="section__title features__title">Технические характеристики флокулянта Vettafloc</h2>
-                        <div class="features__tbody features__tbody--four-lines fz-15 features__tbody--no-responsive">
-                            <div class="features__line">
-                                <div class="features__row features__row--title">Наименование</div>
-                                <div class="features__row features__row--title">Тип заряда</div>
-                                <div class="features__row features__row--title">Заряд</div>
-                                <div class="features__row features__row--title">Молекулярная масса</div>
-                                <div class="features__row features__row--title">Технологические процессы/назначение
+
+                        <div class="table__wrapper dragscroll stylised-scrollbar">
+
+                            <div
+                                class="features__tbody features__tbody--four-lines fz-15 features__tbody--no-responsive">
+                                <div class="features__line">
+                                    <div class="features__row features__row--title">Наименование</div>
+                                    <div class="features__row features__row--title">Тип заряда</div>
+                                    <div class="features__row features__row--title">Заряд</div>
+                                    <div class="features__row features__row--title">Молекулярная масса</div>
+                                    <div class="features__row features__row--title">Технологические процессы/назначение
+                                    </div>
+                                </div>
+                                <div class="features__line">
+                                    <div class="features__row features__row--bold">Vettafloc серия AN</div>
+                                    <div class="features__row">Анионный</div>
+                                    <div class="features__row">Очень слабый
+                                        (неоионный заряд)
+                                        Слабый, средний, высокий</div>
+                                    <div class="features__row features__row--bold">Высокая Очень высокая</div>
+                                    <div class="features__row features__row--bold">Напорная флотация Фильтрация
+                                        Гравитационное осаждение
+                                        Механическое обезвоживание
+                                        Удаление фосфора</div>
+                                </div>
+                                <div class="features__line">
+                                    <div class="features__row features__row--bold">Vettafloc серия CT</div>
+                                    <div class="features__row">Катионный</div>
+                                    <div class="features__row">Средний
+                                        Высокий, очень высокий</div>
+                                    <div class="features__row features__row--bold">Низкая
+                                        Средняя
+                                        Высокая
+                                        Очень высокая</div>
+                                    <div class="features__row features__row--bold">Напорная флотация Фильтрация
+                                        Обезвоживания в ленточныз
+                                        прессах, центрифугах и шнек-
+                                        прессах, осветление воды</div>
                                 </div>
                             </div>
-                            <div class="features__line">
-                                <div class="features__row features__row--bold">Vettafloc серия AN</div>
-                                <div class="features__row">Анионный</div>
-                                <div class="features__row">Очень слабый
-                                    (неоионный заряд)
-                                    Слабый, средний, высокий</div>
-                                <div class="features__row features__row--bold">Высокая Очень высокая</div>
-                                <div class="features__row features__row--bold">Напорная флотация Фильтрация
-                                    Гравитационное осаждение
-                                    Механическое обезвоживание
-                                    Удаление фосфора</div>
-                            </div>
-                            <div class="features__line">
-                                <div class="features__row features__row--bold">Vettafloc серия CT</div>
-                                <div class="features__row">Катионный</div>
-                                <div class="features__row">Средний
-                                    Высокий, очень высокий</div>
-                                <div class="features__row features__row--bold">Низкая
-                                    Средняя
-                                    Высокая
-                                    Очень высокая</div>
-                                <div class="features__row features__row--bold">Напорная флотация Фильтрация
-                                    Обезвоживания в ленточныз
-                                    прессах, центрифугах и шнек-
-                                    прессах, осветление воды</div>
-                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -283,9 +294,44 @@
                     потребительская стабильность продукта или услуги заказчика обеспечивается стабильностью качественных
                     параметров поставляемых флокулянтов Vettafloc.
                 </p>
-                <img src="images/Screenshot(10)1.png" />
             </div>
         </section>
+        <div class="information-text">
+            <div class="container">
+                <h2 class="section__title">Как мы работаем</h2>
+                <ul class="how-list">
+                    <li>
+                        <b>1. Сбор информации</b><br>
+                        Обозначаете задачу, собираем информацию и выезжаем на объект.
+                    </li>
+                    <li>
+                        <b>2. Технический аудит</b><br>
+                        Проводим лабораторный подбор реагентов, предоставляем отчет.
+                    </li>
+                    <li>
+                        <b>3. Промышленные испытания</b><br>
+                        Готовим программу промышленных испытаний.
+                        Запускаем флокулянт в процесс, выводим дозировку реагентов в рабочий режим.
+                        По результатам промышленных испытаний получаете отчет и коммерческое предложение.
+                    </li>
+                    <li>
+                        <b>4. Стадия поставки</b><br>
+                        Гарантируем своевременную поставку и качество продукта.
+                        Консультируем по вопросам, связанным с применением поставленного продукта.
+                        Контролируем работу дистанционно или выезжаем на объект.
+                    </li>
+                </ul>
+                <p><b class="fz-16">Платежные условия обсуждаются индивидуально, мы всегда готовы пойти Вам
+                        навстречу.</b></p>
+                <div class="microscope-block">
+                    Для максимальной эффективности<br>
+                    <span>производим подбор и лабораторные испытания</span><br>
+                    под ваше предприятие
+                </div>
+
+
+            </div>
+        </div>
         <section class="callback">
             <div class="container">
                 <div class="callback__wrapper callback__left">
@@ -340,26 +386,227 @@
                             <p>Подбор связки реагентов для флотации: Коагулянт Ferix–3 + Superfloc C 494. Лабораторные и
                                 промышленные тесты в различные технологические периоды .</p>
                             <br>
+                            <h4>Результат</h4>
+                            <p>Мутность слива - 10,8 мг/л (стандартный режим работы, образец 4)<br>
+                                Мутность слива 13 мг/л (период санитарной обработки, образец 3).</p>
                             <h4>Экономический эффект</h4>
                             <p><span>1 200 000 руб/мес</span> (штрафы за сброс).</p>
                             <img src="images/image_85.jpg" />
                         </div>
                     </div>
                     <div class="examples__item">
-                        <div class="examples__title">Очистные сооружения птицефабрики (единовременное выращивание 2,1
-                            млн голов птицы)</div>
+                        <div class="examples__title">Предприятие по переработке крахмалсодержащего сырья</div>
                         <div class="examples__body">
                             <h4>Описание ситуации</h4>
-                            <p>Запуск очистных сооружений нового производства. Вариативность стока в периоды
-                                санобработки помещений.</p>
+                            <p>Недостаточная водоотдача при обезвоживании.<br>
+                                Необходимость достижения влажности кека 80-82% .</p>
                             <br>
                             <h4>Решение</h4>
-                            <p>Подбор связки реагентов для флотации: Коагулянт Ferix–3 + Superfloc C 494. Лабораторные и
-                                промышленные тесты в различные технологические периоды .</p>
+                            <p>Рекомендации по автоматизации процесса приготовления и дозирования раствора флокулянта.
+                                Лабораторный подбор и промышленные испытания Superfloc XD7600.</p>
                             <br>
+                            <h4>Результат</h4>
+                            <p>
+                                Рекомендации по автоматизации процесса приготовления и дозирования раствора флокулянта.
+                                Лабораторный подбор и промышленные испытания Superfloc XD7600.
+                            </p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Марка флокулянта</th>
+                                        <th>Влажность кека,% (пром. испытания)</th>
+                                        <th>Мутность фильтрата, NTU (пром. испытания)</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">Praestol 853 BC (было)</td>
+                                        <td>81,9</td>
+                                        <td>69,9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>82</td>
+                                        <td>164</td>
+                                    </tr>
+                                    <tr>
+                                        <td>82,3</td>
+                                        <td>233</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">Superfloc XD7600</td>
+                                        <td>79,8</td>
+                                        <td>32,1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>80,0</td>
+                                        <td>64,8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>80,1</td>
+                                        <td>92,4</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <img src="images/vetafloc/image11.jpeg" /><br><br>
                             <h4>Экономический эффект</h4>
-                            <p><span>1 200 000 руб/мес</span> (штрафы за сброс).</p>
-                            <img src="images/image_85.jpg" />
+                            <p><span>250 000 руб/мес</span> (снижение удельного расхода флокулянта, утилизация).</p>
+                        </div>
+                    </div>
+                    <div class="examples__item">
+                        <div class="examples__title">Очистные сооружения коммунального стока 210 000 м³/сут</div>
+                        <div class="examples__body">
+                            <h4>Описание ситуации</h4>
+                            <p>Подбор универсального флокулянта для применения в процессе сгущения осадка и
+                                обезвоживания на фильтр-прессе.</p>
+                            <h4>Решение</h4>
+                            <p>Superfloc XD7600.</p>
+                            <h4>Результат</h4>
+                            <p>Мутность 6,1 мг/л Влажность кека на выходе с фильтр-пресса: 83,67%. (Влажность кека
+                                конкурирующих марок 86,5 – 87,2) Удельный расход: на 30% ниже конкурирующих марок.</p>
+                            <img src="images/vetafloc/image12.jpeg" /><br><br>
+                            <h4>Экономический эффект</h4>
+                            <p><span>364 000 руб/мес</span> (снижение стоимости обезвоживания 1 т.с.в. за счет снижения
+                                удельного расхода флокулянта).</p>
+                        </div>
+                    </div>
+                    <div class="examples__item">
+                        <div class="examples__title">Очистные сооружения нефтеперерабатывающего завода 65 000 м³/сут
+                        </div>
+                        <div class="examples__body">
+                            <h4>Описание ситуации</h4>
+                            <p>1. Флотация. Подготовка раствора флокулянта- барботаж воздухом<br>
+                                2. Обезвоживание активного ила и сырого осадка (удешевление стоимости обезвоживания).
+                            </p>
+                            <h4>Решение</h4>
+                            <p>
+                                1. Подбор стойкого к окислению флокулянта Superfloc C492HMW, оценка эффективности
+                                применения в промышленных масштабах.<br>
+                                2. Подбор более экономичного продукта оценка эффективности – Superfloc 8294.
+                            </p>
+                            <h4>Результат</h4>
+                            <br>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Марка флокулянта</th>
+                                        <th>Нефтепродукты, мг/л</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Superfloc С 492 HMW </td>
+                                        <td>147</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Praestol 851 BC</td>
+                                        <td>16,1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Superfloc С 494</td>
+                                        <td>18,2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Без обработки - исх.</td>
+                                        <td>78</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br><br>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Марка </th>
+                                        <th>Доза флок-та, мл</th>
+                                        <th>Объем ф-та, мл/10 сек</th>
+                                        <th>Кач-во отлипания, балл</th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">Superfloc C 494</td>
+                                        <td>16</td>
+                                        <td>135</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>150</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>160</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">Superfloc C 8294</td>
+                                        <td>16</td>
+                                        <td>140</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>145</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>160</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <img src="images/vetafloc/image13.jpeg" /><br><br>
+                            <h4>Экономический эффект</h4>
+                            <p><span>470 000 руб/мес</span> (улучшение качества нефтепродуктов в сточной воде, экономия
+                                стоимости обезвоживания), 1 500 000 руб - стоимость станции приготовления флокулянта.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="examples__item">
+                        <div class="examples__title">Металлургический комбинат 2400 м³/сут сточных вод
+                        </div>
+                        <div class="examples__body">
+                            <h4>Описание ситуации</h4>
+                            <p>Очистка стока травильных цехов (разделение нейтрализованного стока) Недостаточное
+                                снижение железа и мутности (визуально) в сбрасываемом стоке.</p>
+                            <h4>Решение</h4>
+                            <p>Superfloc A110HMW.</p>
+                            <h4>Результат</h4>
+                            <p>
+                                Содержание железа общ, мг/л: до - 1,5 мг/л, после – 0,4 мг/л. Мутность: (слева – до,
+                                справа - после)
+                                Снижение удельного расхода флокулянта Superfloc A110HMW в сравнении с базовым
+                                применяемым - 20%</p>
+                            <img src="images/vetafloc/image14.jpeg" /><br><br>
+
+                            <h4>Экономический эффект</h4>
+                            <p><span>650 000 руб/мес</span> (снижение объема очищенного сбрасываемого стока
+                                за
+                                счет возврата в процесс на технологические нужды, снижение удельного расхода флокулянта
+                                в процессе очистки стока) .</p>
+
+
+                        </div>
+                    </div>
+                    <div class="examples__item">
+                        <div class="examples__title">Фабрика по обогащению угля 2,1 млн т/год
+                        </div>
+                        <div class="examples__body">
+                            <h4>Описание ситуации</h4>
+                            <p>Подбор флокулянта для процессов сгущения и фильтрации.</p>
+                            <h4>Решение</h4>
+                            <p>Сгущение: Superfloc A110HMW (вместо Magnafloc 525)
+                                Фильтрация: Superfloc С496HMW (вместо Zetag 8180).</p>
+                            <h4>Результат</h4>
+                            <p>Увеличение скорости осаждения на 10-15%. Мутность слива: была 130 мг/л, стала 80 мг/л</p>
+                            <img src="images/vetafloc/image16.jpg" /><br><br>
+                            <h4>Экономический эффект</h4>
+                            <p>
+                                <span>650 000 руб/мес</span> (снижение объема очищенного сбрасываемого стока за счет
+                                возврата в
+                                процесс на технологические нужды, снижение удельного расхода флокулянта в процессе
+                                очистки стока) .
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -432,8 +679,9 @@
                     </div>
                 </div>
                 <div class="delivery__map">
-                    <div class="delivery__map-container"></div>
-                    <button class="button delivery__fullmap">ПОСМОТРЕТЬ НА КАРТЕ</button>
+                    <div class="delivery__map-container" id="delivery"></div>
+                    <a href='https://yandex.ru/maps/?ll=38.688681%2C55.289066&mode=whatshere&whatshere%5Bpoint%5D=38.686993%2C55.288901&whatshere%5Bzoom%5D=17.06&z=17.06'
+                        taget='_blank' class="button  link__button delivery__fullmap">ПОСМОТРЕТЬ НА КАРТЕ</a>
                 </div>
             </div>
         </section>
@@ -497,15 +745,15 @@
         <section class="clients">
             <div class="container">
                 <h2 class="section__title ta-center">НАШИ КЛИЕНТЫ</h2>
-                <div class="clients__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/clients/image_78.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_79.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_80.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_81.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_82.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_83.png"></div>
-                        <div class="swiper-slide"><img src="images/clients/image_84.png"></div>
+                <div class="clients__slider">
+                    <div class="owl-carousel owl-theme">
+                        <div><img src="images/clients/image_78.png"></div>
+                        <div><img src="images/clients/image_79.png"></div>
+                        <div><img src="images/clients/image_80.png"></div>
+                        <div><img src="images/clients/image_81.png"></div>
+                        <div><img src="images/clients/image_82.png"></div>
+                        <div><img src="images/clients/image_83.png"></div>
+                        <div><img src="images/clients/image_84.png"></div>
                     </div>
                 </div>
             </div>
@@ -536,90 +784,115 @@
             <div class="footer__bottom">
                 <div class="footer__menu-wrapper">
                     <div class="footer__title">
-                        СЫРЬЕВАЯ ХИМИЯ
+                        КОАГУЛЯНТЫ
                     </div>
                     <nav class="footer__menu">
                         <ul>
                             <li class="footer__menu-item">
-                                <a href="#">Натрий едкий раствор</a>
+                                <a href="#">Железо хлорное</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#">Натрий едкий в гранулах</a>
+                                <a href="#">Сульфат алюминия</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#">Соляная кислота</a>
+                                <a href="#">Пакс ПС</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#">Серная кислота</a>
+                                <a href="#">Полиалюминия хлорид</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#">Азотная кислота</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Ортофосфорная кислота</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Уксусная кислота</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Гипохлорит натрия</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Аммиачная вода</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Перекись водорода</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Антибактериальный гель</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Хлористый кальций</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">Карбамид марки А</a>
+                                <a href="#">Сульфат железа</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="footer__menu-wrapper">
                     <div class="footer__title">
-                        ВОДОПОДГОТОВКА И ВОДООЧИСТКА
+                        ПРОЧИЕ РЕАГЕНТЫ
                     </div>
                     <nav class="footer__menu">
                         <ul>
                             <li class="footer__menu-item">
-                                <a href="#" class="footer__menu-link">Флокулянты VETTAFLOC</a>
+                                <a href="#" class="footer__menu-link">Гипохлорит натрия</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="footer__menu-link">Железо хлорное</a>
+                                <a href="#" class="footer__menu-link">Аммиачная вода</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="footer__menu-link">Сульфат алюминия</a>
+                                <a href="#" class="footer__menu-link">Перекись водорода</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="footer__menu-link">Полиалюминия хлорид</a>
+                                <a href="#" class="footer__menu-link">Антибактериальный гель</a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="footer__menu-link">Сульфат железа</a>
+                                <a href="#" class="footer__menu-link">Хлористый кальций</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Карбамид марки А</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Бисульфит натрия</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Хлорат натрия</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Магний сульфат 7-водный</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Лимонная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Сода кальцинированная</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Гипохлорит кальция</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="footer__sections-wrapper">
-                    <div class="footer__sections">
-                        <ul>
-                            <li><a href="#">Пеногаситель ChemiFoam</a></li>
-                            <li><a href="#">Силикагель Bris</a></li>
-                            <li><a href="#">Кизельгур</a></li>
-                        </ul>
+                <div class="footer__menu-wrapper">
+                    <div class="footer__title">
+                        КИСЛОТЫ
                     </div>
-                    <div class="footer__sections">
+                    <nav class="footer__menu">
                         <ul>
-                            <li><a href="#">Пылеподавитель ChemiBind</a></li>
-                            <li><a href="#">Автокосметика ChemiCar</a></li>
-                            <li><a href="#">Химия для бассейнов ChemiPool</a></li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Соляная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Серная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Азотная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Ортофосфорная кислота</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Уксусная кислота</a>
+                            </li>
                         </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu-wrapper">
+                    <div class="footer__title">
+                        ЩЕЛОЧИ
+                    </div>
+                    <nav class="footer__menu">
+                        <ul>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Натрий едкий раствор</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Натрий едкий в гранулах</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu-wrapper">
+                    <div class="footer__title">
+                        ФЛОКУЛЯНТЫ
                     </div>
                 </div>
             </div>
