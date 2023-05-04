@@ -13,48 +13,7 @@ $(document).ready(function () {
         // $('.examples__title').removeClass('active');
 
     });
-    // console.log($('.swiper'));
-    // if ($('.clients__slider').length) {
 
-
-
-    //     const swiper = new Swiper('.clients__slider', {
-    //         slidesPerView: 1,
-    //         spaceBetween: 10,
-    //         // loop: true,
-    //         breakpoints: {
-
-    //             320: {
-    //                 slidesPerView: 2,
-    //             },
-    //             480: {
-    //                 slidesPerView: 3,
-    //             },
-    //             640: {
-    //                 slidesPerView: 4,
-    //             },
-    //             1024: {
-    //                 slidesPerView: 5,
-    //             },
-    //             1199: {
-    //                 slidesPerView: 7,
-    //             },
-    //         },
-    //         navigation: {
-    //             nextEl: ".swiper-button-next",
-    //             prevEl: ".swiper-button-prev",
-    //         },
-
-    //     });
-    // }
-
-    // if ($('.swiper__main').length) {
-    //     console.log($('.swiper__main').length);
-    //     const swiper = new Swiper('.swiper__main', {
-    //         slidesPerView: 1,
-    //         loop: true,
-    //     });
-    // }
 
     var res = $("[data-fancybox]");
     console.log(res.length);
@@ -94,7 +53,7 @@ $(document).ready(function () {
         // margin: 10,
         dots: false,
         responsiveClass: true,
-        nav: true,
+        nav: false,
         items: 1,
     });
 
@@ -184,6 +143,32 @@ function init() {
 
     }
 
+    if (document.querySelector('#delivery-map')) {
+
+        var deliveryMap = new ymaps.Map('delivery-map', {
+            // При инициализации карты обязательно нужно указать
+            // её центр и коэффициент масштабирования.
+            center: [55.288901, 38.686993], // Москва
+            zoom: 14,
+            controls: []
+        });
+
+        myPlacemark = new ymaps.Placemark(
+            [55.288901, 38.686993], {
+            hintContent: 'Транскемикал эксперсс',
+            balloonContent: false,
+        }, {
+            // iconLayout: 'default#image',
+            iconColor: '#0066CC'
+            // iconImageHref: '/bitrix/templates/domsobytie/images/mark.svg',
+            // iconImageSize: [160, 60],
+            // iconImageOffset: [-80, -30],
+        });
+
+        deliveryMap.geoObjects.add(myPlacemark);
+
+
+    }
 
 
     if (document.querySelector('#delivery')) {
